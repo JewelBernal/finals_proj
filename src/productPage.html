@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="" onload="ready()">
+    <!-- background -->
+    <video
+      class="w-full h-full fixed object-cover blur-[1px]"
+      autoplay
+      muted
+      loop
+      id="backgroundVideo"
+    >
+      <source src="img/background.mp4" type="video/mp4" />
+    </video>
+    <!-- header % navbar -->
+    <header
+      class="antialiased relative backdrop-blur-lg flex items-center justify-center w-full h-[200px] z-50"
+    >
+      <div class="flex flex-col justify-start m-auto gap-5">
+        <h1 class="text-6xl font-black text-slate-100">
+          Welcome to One Store.
+        </h1>
+        <h1 class="font-medium text-slate-400">
+          One stop-shop for all your music needs.
+        </h1>
+      </div>
+    </header>
+    <div
+      class="antialiased backdrop-blur-md sticky top-0 left-0 w-full h-[190 px] z-50 bg-black/60"
+    >
+      <div class="top-0 w-full h-[150px] z-50 flex justify-center items-center">
+        <div
+          class="flex flex-col justify-center items-center max-w-full max-h-full gap-3"
+        >
+          <div
+            class="flex justify-center items-center gap-2 m-2 w-full animate-pulse"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              height="24"
+              width="24"
+              id="Shrink-Window-Osx--Streamline-Sharp"
+            >
+              <desc>
+                Shrink Window Osx Streamline Icon: https://streamlinehq.com
+              </desc>
+              <g id="shrink-window-osx">
+                <path
+                  id="Subtract"
+                  fill="#ffffff9c"
+                  fill-rule="evenodd"
+                  d="M23 12c0 6.075 -4.925 11 -11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11ZM9.5 14.5H5v-2h6.5V19h-2v-4.5Zm3 -9.5v6.5H19v-2h-4.5V5h-2Z"
+                  clip-rule="evenodd"
+                  stroke-width="1"
+                ></path>
+              </g>
+            </svg>
+            <h1 class="font-black text-slate-100 text-4xl">one store.</h1>
+          </div>
+          <div class="flex flex-row w-auto">
+            <nav class="flex flex-row gap-[80px] justify-center items-center">
+              <form
+                class="flex flex-row justify-center items-center gap-4 ml-[60px]"
+                name="navbar_search"
+                method="post"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 18"
+                  height="18"
+                  width="18"
+                  id="Magnifying-Glass--Streamline-Sharp"
+                >
+                  <desc>
+                    Magnifying Glass Streamline Icon: https://streamlinehq.com
+                  </desc>
+                  <g id="magnifying-glass--glass-search-magnifying">
+                    <path
+                      id="Union"
+                      fill="#ffffff9c"
+                      fill-rule="evenodd"
+                      d="M2.43759 8.25c0 -3.2101575 2.6023425000000002 -5.8125 5.812485 -5.8125 3.2101499999999996 0 5.8125 2.6023425000000002 5.8125 5.8125 0 3.2101499999999996 -2.6023500000000004 5.8125 -5.8125 5.8125 -3.2101425 0 -5.812485 -2.6023500000000004 -5.812485 -5.8125ZM8.250074999999999 0.5625C4.0044 0.5625 0.5625914999999999 4.00431 0.5625914999999999 8.25c0 4.245675 3.4418084999999996 7.6875 7.687483500000001 7.6875 1.785 0 3.4278750000000002 -0.608325 4.73265 -1.629l2.854425 2.854425 1.3257750000000001 -1.32585 -2.854425 -2.854425C15.32925 11.677875 15.937574999999999 10.035 15.937574999999999 8.25c0 -4.24569 -3.441825 -7.6875 -7.6875 -7.6875Z"
+                      clip-rule="evenodd"
+                      stroke-width="1"
+                    ></path>
+                  </g>
+                </svg>
+                <input
+                  class="rounded-full bg-slate-100/5 w-[40px] hover:w-[500px] focus:w-[500px] focus:animate-pulse transition-all text-slate-100"
+                  type="text"
+                  placeholder="search"
+                />
+              </form>
+              <navitem>
+                <a
+                  href="./index.html"
+                  class="text-slate-100 font-semibold flex flex-row justify-center items-center gap-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 18 18"
+                    height="18"
+                    width="18"
+                    id="Home-1--Streamline-Sharp"
+                  >
+                    <desc>
+                      Home 1 Streamline Icon: https://streamlinehq.com
+                    </desc>
+                    <g id="home-1--home-house-roof-shelter">
+                      <path
+                        id="Union"
+                        fill="#ffffffba"
+                        fill-rule="evenodd"
+                        d="M17.25 7.9161 9 0.49108874999999996 0.75 7.9161v9.33405h16.5V7.9161Z"
+                        clip-rule="evenodd"
+                        stroke-width="1"
+                      ></path>
+                    </g>
+                  </svg>
+                  Home</a
+                >
+              </navitem>
+              <navitem class="openShop">
+                <div class="openShop">
+                  <a class="cart">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 18 18"
+                      height="18"
+                      width="18"
+                      id="Shopping-Cart-Add--Streamline-Sharp"
+                    >
+                      <desc>
+                        Shopping Cart Add Streamline Icon:
+                        https://streamlinehq.com
+                      </desc>
+                      <g
+                        id="shopping-cart-add--shopping-cart-checkout-add-plus-new"
+                      >
+                        <path
+                          id="Union"
+                          fill="#ffffff9c"
+                          fill-rule="evenodd"
+                          d="M3.375 2.25H0.75V0.75h4.125l0 3.75 11.98275 0 -3.5999999999999996 9H3.375V2.25ZM11.25 9.750225h-1.5V11.25h-1.5v-1.499775H6.7499775v-1.5H8.25V6.75h1.5v1.5002250000000001h1.5v1.5ZM3.375 15.187125000000002h2.0628225000000002v2.0628H3.375v-2.0628Zm4.5 0h2.0628v2.0628H7.875v-2.0628Z"
+                          clip-rule="evenodd"
+                          stroke-width="1"
+                        ></path>
+                      </g>
+                    </svg>
+
+                    Cart</a
+                  >
+                  <div
+                    class="rounded-md bg-red-500 w-[14px] h-[14px] flex justify-center items-center"
+                  >
+                    <span class="quantity">0</span>
+                  </div>
+                </div>
+              </navitem>
+              <navitem class="flex flex-row justify-center items-center gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 18"
+                  height="18"
+                  width="18"
+                  id="User-Circle-Single--Streamline-Core"
+                >
+                  <desc>
+                    User Circle Single Streamline Icon: https://streamlinehq.com
+                  </desc>
+                  <g
+                    id="user-circle-single--circle-geometric-human-person-single-user"
+                  >
+                    <path
+                      id="Union"
+                      fill="#ffffff9e"
+                      fill-rule="evenodd"
+                      d="M18 9c0 2.4131185714285714 -0.949757142857143 4.6044 -2.4957000000000003 6.220542857142857 -1.632857142857143 1.7067857142857144 -3.9306857142857146 2.7720000000000002 -6.477441428571429 2.779457142857143L9 18l-0.02685857142857143 0c-2.5467557142857142 -0.0074571428571428575 -4.844635714285714 -1.0726714285714287 -6.477402857142858 -2.779457142857143C0.9497044285714286 13.604400000000002 0 11.413118571428573 0 9c0 -4.970558571428572 4.029441428571428 -9 9 -9 4.970571428571429 0 9 4.029441428571428 9 9Zm-3.544971428571429 4.5C13.158128571428572 11.92946142857143 11.19592285714286 10.928532857142857 9 10.928532857142857c-2.1959228571428575 0 -4.1580771428571435 1.0009285714285714 -5.455092857142858 2.571467142857143 1.2970157142857144 1.5705000000000002 3.25917 2.5714285714285716 5.455092857142858 2.5714285714285716 2.1959228571428575 0 4.158128571428572 -1.0009285714285714 5.455028571428572 -2.5714285714285716ZM9.000154285714286 9.642818571428572c1.7751985714285716 0 3.2142857142857144 -1.4390871428571428 3.2142857142857144 -3.2142857142857144s-1.4390871428571428 -3.2142857142857144 -3.2142857142857144 -3.2142857142857144 -3.2142857142857144 1.4390871428571428 -3.2142857142857144 3.2142857142857144 1.4390871428571428 3.2142857142857144 3.2142857142857144 3.2142857142857144Z"
+                      clip-rule="evenodd"
+                      stroke-width="1"
+                    ></path>
+                  </g>
+                </svg>
+                <h1 class="text-slate-100 font-semibold">
+                  <script>
+                    document.write(sessionStorage.getItem("username"));
+                  </script>
+                </h1>
+              </navitem>
+              <navitem></navitem>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main components -->
+    <div class="">
+      <div id="product"></div>
+      <div class="mcontainer"></div>
+      <div class="card">
+        <div class="flex flex-row items-center">
+          <svg
+            class="ml-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 48 48"
+            height="48"
+            width="48"
+            id="Shopping-Cart-Add--Streamline-Sharp"
+          >
+            <desc>
+              Shopping Cart Add Streamline Icon: https://streamlinehq.com
+            </desc>
+            <g id="shopping-cart-add--shopping-cart-checkout-add-plus-new">
+              <path
+                id="Union"
+                fill="#ffffff9e"
+                fill-rule="evenodd"
+                d="M9 6H2V2h11l0 10 31.954 0 -9.6 24H9V6ZM30 26.0006h-4V30h-4v-3.9994H17.99994v-4H22V18h4v4.0006h4v4ZM9 40.499h5.50086v5.5008H9v-5.5008Zm12 0h5.5008v5.5008H21v-5.5008Z"
+                clip-rule="evenodd"
+                stroke-width="1"
+              ></path>
+            </g>
+          </svg>
+          <h1>Your Cart</h1>
+        </div>
+        <ul class="listCard"></ul>
+        <div class="checkOut">
+          <div class="total">Cart Empty</div>
+          <div class="flex justify-center gap-3 items items-center">
+            <div class="flex justify-center items-center w-[93px] h-[40]">
+              <a
+                class="buynow text-center py-[8px]"
+                href="./orderConfirmationPage.html"
+                >Buy</a
+              >
+            </div>
+            <div class="closeShop items-center justify-center w-[229px]">
+              Close
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center items-center my-5">
+        <h1 class="font-normal text-[13px] text-white">
+          2024 (c) Jewel Bernal
+        </h1>
+      </div>
+      <script>
+        function ready() {
+          const queryString = window.location.search;
+          const urlParams = new URLSearchParams(queryString);
+          const product = urlParams.get("name");
+          console.log(product);
+
+          var newDiv = document.getElementById("product");
+          products = JSON.parse(localStorage.getItem("productItems"));
+          products.forEach((value, key) => {
+            if (value.title == product) {
+              newDiv.innerHTML = `
+              <title>${value.title}</title>
+              <div class='flex flex-wrap flex-col justify-center min-h-screen m-20 mb-0 gap-5 -z-[99]'>
+              <div
+        class="backdrop-blur-[20px] flex max-h-[110px] max-w-[700px] rounded-lg bg-slate-200/0 justify-start items-center flex-col gap-2"
+      >
+        <h1 class="font-black text-slate-100 text-6xl px-3">
+          Home  //  ${value.title}
+        </h1>
+        
+      </div>
+              <div class='backdrop-blur-[20px] bg-slate-100/10 z-[100] rounded-lg flex justify-center flex-col items-center m-10 p-5 gap-10 border border-slate-100/40'>
+                <div class='flex justify-center h-[700px] w-[800px] z-[100] rounded-lg items-center'>
+                  <div class=''>
+                    </div>
+                    <div class='flex justify-center items-center flex-col gap-5'>
+                      <img class='w-[500px] h-[500px] object-cover rounded-lg' src="${
+                        value.image
+                      }">
+                      <div class="title font-bold text-slate-100">${
+                        value.title
+                      }</div>
+                      <div class="detail text-center font-normal text-slate-100">${
+                        value.detail
+                      }</div>
+                      </div>
+                      
+                      
+                      </div>
+                      <div class="price font-black text-slate-100 text-2xl">$${value.price.toLocaleString()}</div>
+                      <div class='flex flex-row gap-2'>
+                        <button class='productPageBuy hover:animate-pulse' onclick="addToCard(${key})">Add To Cart</button>
+                        </div>
+                    </div>
+              </div>`;
+            }
+          });
+          function addToCard(key) {
+            if (listCards[key] == null) {
+              // copy product form list to list card
+              listCards[key] = JSON.parse(JSON.stringify(products[key]));
+              listCards[key].quantity = 1;
+            }
+            reloadCard();
+          }
+          function reloadCard() {
+            listCard.innerHTML = "";
+            let count = 0;
+            let totalPrice = 0;
+            listCards.forEach((value, key) => {
+              totalPrice = totalPrice + value.price;
+              count = count + value.quantity;
+              if (value != null) {
+                let newDiv = document.createElement("li");
+                newDiv.innerHTML = `
+                <div><img src="img/${value.image}"/></div>
+                <div>${value.title}</div>
+                <div>$${value.price.toLocaleString()}</div>
+                <div>
+                    <button onclick="changeQuantity(${key}, ${
+                  value.quantity - 1
+                })">-</button>
+                    <div class="count">${value.quantity}</div>
+                    <button onclick="changeQuantity(${key}, ${
+                  value.quantity + 1
+                })">+</button>
+                </div>`;
+                listCard.appendChild(newDiv);
+              }
+            });
+            total.innerText = totalPrice.toLocaleString();
+            quantity.innerText = count;
+          }
+          function changeQuantity(key, quantity) {
+            if (quantity == 0) {
+              delete listCards[key];
+            } else {
+              listCards[key].quantity = quantity;
+              listCards[key].price = quantity * products[key].price;
+            }
+            reloadCard();
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

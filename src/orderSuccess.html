@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>One Store</title>
+  </head>
+
+  <body class="">
+    <!-- background -->
+    <video
+      class="w-full h-full fixed object-cover blur-[1px] -z-[100]"
+      autoplay
+      muted
+      loop
+      id="backgroundVideo"
+    >
+      <source src="img/background.mp4" type="video/mp4" />
+    </video>
+    <!-- header % navbar -->
+    <header
+      class="antialiased relative backdrop-blur-lg flex items-center justify-center w-full h-[200px] z-50"
+    >
+      <div class="flex flex-col justify-start m-auto gap-5">
+        <h1 class="text-6xl font-black text-slate-100">
+          Welcome to One Store.
+        </h1>
+        <h1 class="font-medium text-slate-400">
+          One stop-shop for all your music needs.
+        </h1>
+      </div>
+    </header>
+    <div
+      class="antialiased backdrop-blur-md sticky top-0 left-0 w-full h-[190 px] z-50 bg-black/60"
+    >
+      <div class="top-0 w-full h-[150px] z-50 flex justify-center items-center">
+        <div
+          class="flex flex-col justify-center items-center max-w-full max-h-full gap-3"
+        >
+          <div
+            class="flex justify-center items-center gap-2 m-2 w-full animate-pulse"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              height="24"
+              width="24"
+              id="Shrink-Window-Osx--Streamline-Sharp"
+            >
+              <desc>
+                Shrink Window Osx Streamline Icon: https://streamlinehq.com
+              </desc>
+              <g id="shrink-window-osx">
+                <path
+                  id="Subtract"
+                  fill="#ffffff9c"
+                  fill-rule="evenodd"
+                  d="M23 12c0 6.075 -4.925 11 -11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11ZM9.5 14.5H5v-2h6.5V19h-2v-4.5Zm3 -9.5v6.5H19v-2h-4.5V5h-2Z"
+                  clip-rule="evenodd"
+                  stroke-width="1"
+                ></path>
+              </g>
+            </svg>
+            <h1 class="font-black text-slate-100 text-4xl">one store.</h1>
+          </div>
+          <div class="flex flex-row w-auto">
+            <nav class="flex flex-row gap-[80px] justify-center items-center">
+              <form
+                class="flex flex-row justify-center items-center gap-4 ml-[60px] pl-1"
+                name="navbar_search"
+                method="post"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 18"
+                  height="18"
+                  width="18"
+                  id="Magnifying-Glass--Streamline-Sharp"
+                >
+                  <desc>
+                    Magnifying Glass Streamline Icon: https://streamlinehq.com
+                  </desc>
+                  <g id="magnifying-glass--glass-search-magnifying">
+                    <path
+                      id="Union"
+                      fill="#ffffff9c"
+                      fill-rule="evenodd"
+                      d="M2.43759 8.25c0 -3.2101575 2.6023425000000002 -5.8125 5.812485 -5.8125 3.2101499999999996 0 5.8125 2.6023425000000002 5.8125 5.8125 0 3.2101499999999996 -2.6023500000000004 5.8125 -5.8125 5.8125 -3.2101425 0 -5.812485 -2.6023500000000004 -5.812485 -5.8125ZM8.250074999999999 0.5625C4.0044 0.5625 0.5625914999999999 4.00431 0.5625914999999999 8.25c0 4.245675 3.4418084999999996 7.6875 7.687483500000001 7.6875 1.785 0 3.4278750000000002 -0.608325 4.73265 -1.629l2.854425 2.854425 1.3257750000000001 -1.32585 -2.854425 -2.854425C15.32925 11.677875 15.937574999999999 10.035 15.937574999999999 8.25c0 -4.24569 -3.441825 -7.6875 -7.6875 -7.6875Z"
+                      clip-rule="evenodd"
+                      stroke-width="1"
+                    ></path>
+                  </g>
+                </svg>
+                <input
+                  class="rounded-full bg-slate-100/5 w-[40px] hover:w-[500px] focus:w-[500px] focus:animate-pulse transition-all text-slate-100"
+                  type="text"
+                  placeholder="search"
+                />
+              </form>
+              <navitem>
+                <a
+                  href=""
+                  class="text-slate-100 flex flex-row justify-center items-center gap-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 18 18"
+                    height="18"
+                    width="18"
+                    id="Home-1--Streamline-Sharp"
+                  >
+                    <desc>
+                      Home 1 Streamline Icon: https://streamlinehq.com
+                    </desc>
+                    <g id="home-1--home-house-roof-shelter">
+                      <path
+                        id="Union"
+                        fill="#ffffffba"
+                        fill-rule="evenodd"
+                        d="M17.25 7.9161 9 0.49108874999999996 0.75 7.9161v9.33405h16.5V7.9161Z"
+                        clip-rule="evenodd"
+                        stroke-width="1"
+                      ></path>
+                    </g>
+                  </svg>
+                  Home</a
+                >
+              </navitem>
+              <navitem class="openShop">
+                <div
+                  class="openShop"
+                >
+                  <a
+                    class="cart"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 18 18"
+                      height="18"
+                      width="18"
+                      id="Shopping-Cart-Add--Streamline-Sharp"
+                    >
+                      <desc>
+                        Shopping Cart Add Streamline Icon:
+                        https://streamlinehq.com
+                      </desc>
+                      <g
+                        id="shopping-cart-add--shopping-cart-checkout-add-plus-new"
+                      >
+                        <path
+                          id="Union"
+                          fill="#ffffff9c"
+                          fill-rule="evenodd"
+                          d="M3.375 2.25H0.75V0.75h4.125l0 3.75 11.98275 0 -3.5999999999999996 9H3.375V2.25ZM11.25 9.750225h-1.5V11.25h-1.5v-1.499775H6.7499775v-1.5H8.25V6.75h1.5v1.5002250000000001h1.5v1.5ZM3.375 15.187125000000002h2.0628225000000002v2.0628H3.375v-2.0628Zm4.5 0h2.0628v2.0628H7.875v-2.0628Z"
+                          clip-rule="evenodd"
+                          stroke-width="1"
+                        ></path>
+                      </g>
+                    </svg>
+  
+                    Cart</a
+                  >
+                  <div
+                    class="rounded-md bg-red-500 w-[14px] h-[14px] flex justify-center items-center"
+                  >
+                    <span class="quantity">0</span>
+                  </div>
+                </div>
+              </navitem>
+              <navitem class="flex flex-row justify-center items-center gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 18"
+                  height="18"
+                  width="18"
+                  id="User-Circle-Single--Streamline-Core"
+                >
+                  <desc>
+                    User Circle Single Streamline Icon: https://streamlinehq.com
+                  </desc>
+                  <g
+                    id="user-circle-single--circle-geometric-human-person-single-user"
+                  >
+                    <path
+                      id="Union"
+                      fill="#ffffff9e"
+                      fill-rule="evenodd"
+                      d="M18 9c0 2.4131185714285714 -0.949757142857143 4.6044 -2.4957000000000003 6.220542857142857 -1.632857142857143 1.7067857142857144 -3.9306857142857146 2.7720000000000002 -6.477441428571429 2.779457142857143L9 18l-0.02685857142857143 0c-2.5467557142857142 -0.0074571428571428575 -4.844635714285714 -1.0726714285714287 -6.477402857142858 -2.779457142857143C0.9497044285714286 13.604400000000002 0 11.413118571428573 0 9c0 -4.970558571428572 4.029441428571428 -9 9 -9 4.970571428571429 0 9 4.029441428571428 9 9Zm-3.544971428571429 4.5C13.158128571428572 11.92946142857143 11.19592285714286 10.928532857142857 9 10.928532857142857c-2.1959228571428575 0 -4.1580771428571435 1.0009285714285714 -5.455092857142858 2.571467142857143 1.2970157142857144 1.5705000000000002 3.25917 2.5714285714285716 5.455092857142858 2.5714285714285716 2.1959228571428575 0 4.158128571428572 -1.0009285714285714 5.455028571428572 -2.5714285714285716ZM9.000154285714286 9.642818571428572c1.7751985714285716 0 3.2142857142857144 -1.4390871428571428 3.2142857142857144 -3.2142857142857144s-1.4390871428571428 -3.2142857142857144 -3.2142857142857144 -3.2142857142857144 -3.2142857142857144 1.4390871428571428 -3.2142857142857144 3.2142857142857144 1.4390871428571428 3.2142857142857144 3.2142857142857144 3.2142857142857144Z"
+                      clip-rule="evenodd"
+                      stroke-width="1"
+                    ></path>
+                  </g>
+                </svg>
+                <h1 class="text-slate-100 font-semibold">
+                  <script>
+                    document.write(sessionStorage.getItem("username"));
+                  </script>
+                </h1>
+              </navitem>
+              <navitem></navitem>
+            </navitem>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main components -->
+    <div class="flex flex-wrap justify-center min-h-screen m-20 mb-0 gap-10">
+      <div
+        class=" absolute backdrop-blur-[20px] bg-green-500/30 flex max-h-[190px] max-w-[700px] pt-[10px] pb-[50px] rounded-lg justify-center items-center flex-col"
+      >
+      <div class="flex items-center justify-center m-10 gap-5">
+        <svg class="animate-spin items-center" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 68 68" height="68" width="68" id="Timer-Zero--Streamline-Sharp"><desc>Timer Zero Streamline Icon: https://streamlinehq.com</desc><g id="timer-zero--whole-midnight-hour-clock-time"><path id="Union" fill="#ffffff9e" fill-rule="evenodd" d="M30.458333333333336 14.166666666666668V2.8333333333333335h7.083333333333334v11.333333333333334h-7.083333333333334Zm-20.213 1.088 7.083333333333334 7.083333333333334 5.009333333333334 -5.009333333333334 -7.083333333333334 -7.083333333333334 -5.009333333333334 5.009333333333334Zm40.426 7.083333333333334 7.083333333333334 -7.083333333333334 -5.009333333333334 -5.009333333333334 -7.083333333333334 7.083333333333334 5.009333333333334 5.009333333333334Zm0 23.323999999999998 7.083333333333334 7.083333333333334 -5.009333333333334 5.009333333333334 -7.083333333333334 -7.083333333333334 5.009333333333334 -5.009333333333334Zm-33.34266666666667 0 -7.083333333333334 7.083333333333334 5.009333333333334 5.009333333333334 7.083333333333334 -7.083333333333334 -5.009333333333334 -5.009333333333334ZM30.458333333333336 53.833333333333336v11.333333333333334h7.083333333333334v-11.333333333333334h-7.083333333333334ZM14.166666666666668 37.54166666666667H2.8333333333333335v-7.083333333333334h11.333333333333334v7.083333333333334Zm39.66666666666667 0h11.333333333333334v-7.083333333333334h-11.333333333333334v7.083333333333334Z" clip-rule="evenodd" stroke-width="1"></path></g></svg>
+        <h1 class="font-black text-slate-100 text-6xl px-3">
+        Preparing your order to be shipped!
+          </h1>
+      </div>
+        <div class="flex-initial pl-3">
+          <a href="index.html">
+            <button type="button" class="flex items-center px-5 py-2.5 font-medium tracking-wide text-white capitalize   bg-green-500 rounded-md hover:bg-green-500  focus:outline-none focus:bg-gray-900  transition duration-300 transform active:scale-95 ease-in-out">
+               <span class="pl-2 mx-1">Back to Merchant</span>
+            </button>
+          </a>
+         </div>
+        </div>      
+      </div>
+    </div>
+    <script src="/src/js/addtoCart.js"></script>
+    <script src="./js/products_localStorage.js"></script>
+  </body>
+</html>

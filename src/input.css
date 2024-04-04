@@ -1,0 +1,273 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+.card {
+  border: slategray 1px solid;
+  border-radius: 20px;
+  z-index: 200;
+  position:fixed;
+  left: 101%;
+  height: 85vh;
+  top: 10px;
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.479);
+  backdrop-filter: blur(20px);
+  transition: 0.5s;
+  margin: 0px;
+  margin-left: -15px;
+}
+
+.mcontainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.openShop img {
+  width: 40px;
+}
+
+.openShop {
+  position:relative;
+  text-align: right;
+}
+
+.active .card {
+  height: 900px;
+  left: calc(100% - 500px)
+}
+
+.active .container {
+  transform: translateX(-200px);
+}
+
+.card h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 46px;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.openShop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart {
+  color: rgb(249, 241, 241);
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.quantity {
+  font-weight: 500;
+  font-size: 12px;
+  color: white;
+}
+
+.card .checkOut{
+  position: absolute;
+  gap: 15px;
+  margin: 20px;
+  transition: 0.2s;
+  bottom: 0;
+  width: 92%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card .checkOut .total{
+  border-radius: 5px;
+  background-color: rgb(251, 255, 0);
+  width: 50%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: default;
+  color: black;
+}
+
+.card .checkOut .closeShop{
+  display: flex;
+  justify-items: center;
+  background-color: transparent;
+  width: 50%;
+  height: 40px;
+  border-radius: 10px;
+  border: red 1px solid;
+  color: red;
+  cursor: pointer;
+}
+
+.buynow{
+  width: 57.7px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: rgb(76, 187, 76) 1px solid;
+  color: rgb(76, 187, 76);
+  cursor: pointer;
+}
+
+.buynow:hover{
+  background-color: rgb(76, 187, 76);
+  transition: 0.2s;
+  color: white;
+}
+
+.productPageBuy{
+  display: flex;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  border: rgb(76, 187, 76) 1px solid;
+  border-radius: 8px;
+  color: rgb(76, 187, 76);
+  width: 110px;
+  height: 30px;
+}
+
+.productPageBuy:hover{
+  background-color: rgb(76, 187, 76);
+  transition: 0.2s;
+  color: white;
+}
+
+.card .checkOut .closeShop:hover{
+  background-color: red;
+  transition:0.2s;
+  color: #fff;
+}
+
+.list{
+  transition: 0.5s;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding-top: 50px;
+  width: auto;
+}
+.list .item{
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  background-color: #2829296c;
+  padding: 20px;
+  letter-spacing: 1px;
+}
+.list .item img{
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.list .item .title{
+  color: white;
+  font-weight: 600;
+}
+.list .item .price{
+  color: white;
+  font-weight: 800;
+  margin: 10px;
+}
+.list .item button{
+  display: flex;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  border: rgb(76, 187, 76) 1px solid;
+  border-radius: 8px;
+  color: rgb(76, 187, 76);
+  width: 110px;
+  height: 30px;
+}
+
+.list .item button:hover {
+  font-weight: 800;
+  background-color: rgb(76, 187, 76);
+  color: white;
+  transition: 0.2s;
+  border-radius: 10px;
+}
+
+.list .item button.seeMore{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: white 1px solid;
+  border-radius: 8px;
+  color: white;
+  width: 110px;
+  height: 30px;
+}
+
+.list .item button.seeMore:hover{
+  font-weight: 800;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  transition: 0.2s;
+}
+
+.listCard li{
+  margin: 15px;
+  gap: 3px;
+  display: grid;
+  grid-template-columns: 100px repeat(3, 1fr);
+  color: #fff;
+  row-gap: 10px;
+}
+.listCard li div{
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listCard li img{
+  border-radius: 8px;
+  object-fit: cover;
+  width: 70px;
+  height: 70px;
+}
+.listCard li button{
+  display: flex;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.151);
+}
+.listCard .count{
+  margin: 0 10px;
+}
